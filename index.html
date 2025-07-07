@@ -1,20 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Aqui la ruta del CSS está mal, se corrige por la ruta correcta a assets/css/styles.css  -->
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <title>APIs</title>
-</head>
-<body>
-    <p class="name"></p>
-    <!-- Se observa que blog es una clase y no un id -->
-    <p class="blog"></p>
-    <!-- Se agrega un elemento con la clase location que se encontraba en el javascript, pero no en el html -->
-    <p class="location"></p>
 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Aqui la ruta del CSS está mal, se corrige por la ruta correcta a assets/css/styles.css  -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <title>APIs</title>
+</head>
+
+<body>
+  <!-- Se agregan dos divs, uno con la clase wrapper definida en styles.css para hacer un cuadro blanco -->
+  <div class="wrapper">
+    <!-- Se agrega un div con la clase box definida en styles.css para hacer un cuadro blanco con sombra negra dentro del cuadro blanco de wrapper -->
+    <div class="box">
+      <h2>Información del usuario</h2>
+      <!-- Se agrega un parrafo para indicar que es su nombre -->
+      <p><strong>Name:</strong></p>
+      <p class="name"></p>
+      <!-- Se observa que blog es una clase y no un id -
+           Se  agrega un parrafo con el texto blog para indiciar que es el link a su blog-->
+       <p><strong>Blog:</strong></p>
+      <p class="blog"></p>
+      <!-- Se agrega un parrafo con la clase location que se encontraba en el javascript, pero no en el html 
+           Tambien se agrega un parrafo con el texto location para indicar que es su ubicación-->
+       <p><strong>Location:</strong></p>
+      <p class="location"></p>
+    </div>
+  </div>
   <script src="../assets/js/app.js"></script>
 </body>
+
 </html>
